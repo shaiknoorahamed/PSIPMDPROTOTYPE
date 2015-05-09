@@ -30,6 +30,7 @@ import org.springframework.stereotype.Service;
 
 
 
+
 import com.psiincontrol.pmd.entity.Blog;
 import com.psiincontrol.pmd.entity.Item;
 import com.psiincontrol.pmd.entity.Role;
@@ -95,6 +96,16 @@ public class UserService {
 	public User findOneWithBlogs(String name) {
 		User user = userRepository.findByName(name);
 		return findOneWithBlogs(user.getId());
+	}
+
+	public void delete(int id) {
+		userRepository.delete(id);
+		
+	}
+
+	public User findOne(String username) {
+		
+		return userRepository.findByName(username);
 	}
 
 

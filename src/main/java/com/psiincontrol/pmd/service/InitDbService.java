@@ -70,7 +70,7 @@ public class InitDbService {
 		blogPsiincontrol.setUser(userAdmin);
 		blogRepository.save(blogPsiincontrol);
 		
-		Item item1 = new Item();
+		/*Item item1 = new Item();
 		item1.setBlog(blogPsiincontrol);
 		item1.setTitle("first");
 		item1.setLink("http://www.psi-incontrol.com");
@@ -82,7 +82,7 @@ public class InitDbService {
 		item2.setTitle("second");
 		item2.setLink("http://www.psi-incontrol.com");
 		item2.setPublishedDate(new Date());
-		itemRepository.save(item2);
+		itemRepository.save(item2);*/
 	}
 	
 }
